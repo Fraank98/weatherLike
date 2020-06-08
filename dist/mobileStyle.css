@@ -1,0 +1,160 @@
+@media (max-width: 320px) {
+    .title{
+        font-size: 2.5em;
+        margin-bottom: .3em;
+        
+    }
+
+    .slogan{
+        font-size: .8em;
+    }
+
+    #language{
+        top: 1%;
+    }
+
+    .header_text{
+        top: 10%;
+    }
+
+    #cityWeather{
+        box-shadow: none;
+        width: 45%;
+    }
+
+    .WCTemp {
+        font-size: 1.7em !important;
+    }
+
+    #localTime{
+        font-size: .9em;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 380px) {
+    .header{
+        height: 25vh;
+    }
+
+    .title{
+        font-size: 3em;
+        margin-bottom: .3em;
+        
+    }
+
+    .slogan{
+        font-size: 1em;
+    }
+
+    #language{
+        top: 1%;
+    }
+
+    .custom-select{
+        width: 1.1em !important;
+        height: 1.2em;
+    }
+
+    .header_text{
+        top: 7.5%;
+    }
+
+    #cityWeather{
+        box-shadow: none;
+        width: 45%;
+    }
+
+    .WCTemp {
+        font-size: 1.7em !important;
+    }
+}
+
+@media (min-width: 381px) and (max-width: 479px) {
+    .title{
+        font-size: 2.8em;
+        
+    }
+
+    .slogan{
+        font-size: .9em;
+    }
+
+    #language{
+        top: 1%;
+    }
+
+    .header_text{
+        top: 10%;
+    }
+
+    #cityWeather{
+        box-shadow: none;
+        width: 45%;
+    }
+
+    .WCTemp {
+        font-size: 1.7em !important;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 785px) {
+    
+    .title{
+        font-size: 3em;
+        
+    }
+
+    .header_text{
+        width: 80%; 
+    }
+
+    .img{
+        width: 120%;
+        height: 180%;
+        margin-top: -140px;
+    }
+
+    .header{
+        height: 25vh;
+    }
+
+    #language{
+        top: 1%;
+    }
+
+    #cityWeather{
+        height: 25em;
+        width: 45%;
+        box-shadow: none;
+    }
+
+    .WCTemp {
+        font-size: 2em !important;
+    }
+
+}
+
+@media all and (max-width: 880px) and (orientation : landscape) {
+
+    .header{
+        height: unset;
+    }
+
+    .title{
+        font-size: 3.7em;
+        margin-bottom: 7px;
+    }
+
+    .slogan{
+        font-size: .9em;
+    }
+
+    #weather{
+        height: unset;
+    }
+
+    #cityWeather{
+        box-shadow: unset;
+        width: 45%;
+    }
+}
