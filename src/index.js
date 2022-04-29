@@ -36,7 +36,7 @@ lang = document.documentElement.lang
 if (lang == "it"){
     textTime = "Ottenuto alle "
     selectedLangIt.selected = true
-    textAlert = 'Nome citt\u00E0 sbagliato';
+    textAlert = 'Nome citt\u00E0 inesistente';
 }
 else if (lang == "en"){
     selectedLangEn.selected = true
