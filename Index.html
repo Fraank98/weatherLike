@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.18.0/css/mdb.min.css" rel="stylesheet">
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobileStyle.css">
+    <script src="app.bundle.js"></script>
+    <script src="weather.bundle.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.26.0/moment.min.js"></script> -->
+    <script src="moment.min.js"></script>
+    <script src="moment-with-locales.min.js"></script>
+     
+    <title>WeatherLike</title>
+
+</head>
+
+<body>
+    <div class="home">
+        <div class="header">
+            <img src="city.jpg" class="img">
+            <div id="language">
+                <select class="custom-select custom-select-sm" onchange="location = this.value;" style="margin-right: 1em; width: 1.2em;">
+                    <option value="index.html" id="en">En</option>
+                    <option value="indexIta.html" id="it">It</option>
+                </select>
+            </div>
+            <div class="header_text">
+                <div>
+                    <h1 class="title animated fadeIn">WeatherLike</h1>
+                </div> 
+                <h4 class="slogan animated fadeInUp">Check the weather and plan your time!</h4>
+            </div>
+        </div> 
+    </div>
+
+    <div id="weather">
+        <div id="citySearch">
+            <div style="display: flex; text-align: start; align-items: center;">
+                <input type="search" id="search" class="form-control" placeholder="City">
+                <i class="fas fa-location-arrow fa-2x getCurrentWeather" data-toggle="tooltip" data-placement="right"
+                title="Current Location"></i>
+            </div>
+            <button class="btn btn-primary submit orange lighten-2">Search <i class="fas fa-city ml-2"></i></button>
+        </div>  
+        
+        <div id="cityWeather">
+            <div style="display: flex; flex-direction: column; align-items: center;">
+                <img id="weatherIcon" src="">
+                <p class="WCName"></p>
+            </div>
+            <div id="weatherInfo">
+                <p class="WCDesc"></p>
+                <p class="WCTemp"></p>
+                <p id="localTime"></p>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- Footer -->
+    <footer class="scroll-footer footer font-small">
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3" style="display: flex; align-items: center; justify-content: center;">&#169 2020 Copyright:
+        <a href="https://fraank98.github.io/Danilo-Franco-Site/#1" style="color: white; margin: 0 .8em 0 .5em;">Danilo Franco</a>
+        <a href=""><i class="fab fa-github fa-2x white-text" style="cursor: pointer;"></i></a>
+    </div>
+    <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/places.js@1.19"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.18.0/js/mdb.min.js"></script>
+
+</body>
+</html>
